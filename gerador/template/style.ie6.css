@@ -1,0 +1,187 @@
+/* begin Page */
+
+/* Created by Artisteer v3.1.0.48375 */
+body {
+   padding: 0;
+}
+.container {
+   margin: 1%;
+   padding: 0;
+   width: 100%;
+   background-color: #fc9;
+}
+.left, .right {
+   float: left;
+   width: 46.5%;
+   margin: 1% 0 1% 1%;
+   padding: 1%;
+   background-color: #9cf;
+   color: #000;
+}
+.right {
+   float: right;
+   margin: 1% 1% 1% 0;
+}
+
+.cleared {
+   width:1px;
+}
+/* Start Box */
+.art-box, .art-box-body {
+   zoom:1;
+}
+/* End Box */
+/* Start Bar */
+.art-bar{
+   zoom:1;
+}
+/* End Bar */
+/* end Page */
+
+/* begin Header */
+.art-header {
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('div'),firstChild).className='art-header-jpeg');
+   z-index: 1;
+}
+
+.art-header-jpeg
+{
+   position: absolute;
+   z-index:-1;
+   top: 0;
+   width:100%;
+   height: 150px;
+   background-image: url('images/header.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+/* end Header */
+
+/* begin Box, Sheet */
+.art-sheet {
+   background:#24231C;
+}
+/* end Box, Sheet */
+
+/* begin Layout */
+.art-content-layout, .art-content-layout-row, .art-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.art-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+/* end Layout */
+
+/* begin Box, Block */
+.art-block {
+   background:#24231C;
+}
+/* end Box, Block */
+
+/* begin BlockHeader */
+.art-blockheader {
+   background:#24231C;
+}
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.art-blockcontent {
+   background:#24231C;
+}
+.art-blockcontent-body ul li{
+   height: 1%;
+}
+
+/* end Box, BlockContent */
+
+/* begin Button */
+.art-button-wrapper{
+   zoom: 1;
+}
+.art-button-wrapper .art-button-l, .art-button-wrapper .art-button-r {
+   display: none;
+}
+.art-button-wrapper .art-button {
+   float: left;
+}
+/* end Button */
+
+/* begin Box, Post */
+.art-post {
+   background:#24231C;
+}
+/* end Box, Post */
+
+/* begin PostIcons, PostHeaderIcons */
+.art-postheadericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostHeaderIcons */
+
+/* begin PostBullets */
+.art-post ul li, .art-post ol ul li
+{
+   height: 1%;
+   padding-left: 13px;
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+.art-post ul ol li
+{
+   background: none;
+   padding-left: 0;
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+/* end PostBullets */
+
+/* begin PostMetadata, PostMetadataFooter */
+.art-postmetadatafooter
+{
+   zoom:1;
+   background:#312E23;
+}
+/* end PostMetadata, PostMetadataFooter */
+
+/* begin PostIcons, PostFooterIcons */
+.art-postfootericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostFooterIcons */
+
+/* begin Footer */
+.art-footer-body{
+   padding-right: 0;
+   zoom:1;
+}
+.art-footer{
+   zoom:1;
+   background:#2C2A20;
+}
+
+.art-footer-text
+{
+   height: 35px;
+}
+
+.art-rss-tag-icon
+{
+   zoom: 1;
+   font-size: 1px;
+}
+
+/* end Footer */
+
+/* begin LayoutCell, content */
+.art-content {
+   width: auto;
+}
+/* end LayoutCell, content */
+

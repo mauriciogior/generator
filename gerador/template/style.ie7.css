@@ -1,0 +1,233 @@
+/* begin Page */
+
+/* Start Box */body {
+   padding: 0;
+}
+.container {
+   margin: 1%;
+   padding: 0;
+   width: 100%;
+   background-color: #fc9;
+}
+.left, .right {
+   float: left;
+   width: 46.5%;
+   margin: 1% 0 1% 1%;
+   padding: 1%;
+   background-color: #9cf;
+   color: #000;
+}
+.right {
+   float: right;
+   margin: 1% 1% 1% 0;
+}
+
+.art-box {
+   zoom:expression(runtimeStyle.zoom=1,function(e){for(var i=0;i<e.length;i++)insertBefore(document.createElement('div'),firstChild).className='art-box-'+e[ i]}('br,bl,cr,cl,tr,tl'.split(',')));
+}
+.art-box-body {
+   zoom:1;
+}
+.art-box-tl, .art-box-tr, .art-box-cl, .art-box-cr, .art-box-bl, .art-box-br {
+   position:absolute;
+   display:block;
+   top:0;
+   bottom:0;
+   background-repeat: no-repeat;
+}
+.art-box-tl,.art-box-bl,.art-box-cl {
+   left:0;
+}
+.art-box-tr,.art-box-br,.art-box-cr {
+   right:0;
+}
+.art-box-cl, .art-box-cr {
+   background-repeat:repeat-y;
+}
+.art-box-tl {
+   background-position: top left;
+   z-index:-3;
+}
+.art-box-tr {
+   background-position: top right;
+   z-index:-3;
+}
+.art-box-cl {
+   background-position: center left;
+   z-index:-3;
+}
+.art-box-cr {
+   background-position: center right;
+   z-index:-3;
+}
+.art-box-bl {
+   background-position: bottom left;
+   z-index:-3;
+}
+.art-box-br {
+   background-position: bottom right;
+   z-index:-3;
+}
+
+.art-box .art-box-tl,.art-box .art-box-tr,.art-box .art-box-cl,.art-box .art-box-cr,.art-box .art-box-bl,.art-box .art-box-br{
+   z-index:-2;
+}
+.art-box .art-box .art-box-tl,.art-box .art-box .art-box-tr,.art-box .art-box .art-box-cl,.art-box .art-box .art-box-cr,.art-box .art-box .art-box-bl,.art-box .art-box .art-box-br{
+   z-index:-1;
+}
+/* End Box */
+
+/* Start Bar */
+.art-bar {
+   zoom:expression(runtimeStyle.zoom=1,function(e){for(var i=0;i<e.length;i++)insertBefore(document.createElement('div'),firstChild).className='art-bar-'+e[ i]}('r,l'.split(',')));
+}
+.art-bar-l, .art-bar-r {
+   position:absolute;
+   z-index:-1;
+   top:0;
+   bottom:0;
+   content:' ';
+   background-repeat:repeat-y;
+}
+.art-bar-l {
+   left:0;
+   background-position: top left;
+}
+.art-bar-r {
+   right:0;
+   background-position: top right;
+}
+/* End Bar */
+
+/* end Page */
+
+/* begin Header */
+.art-header {
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('div'),firstChild).className='art-header-jpeg');
+   z-index: 1;
+}
+
+.art-header-jpeg
+{
+   position: absolute;
+   z-index:-1;
+   top: 0;
+   width:100%;
+   height: 150px;
+   background-image: url('images/header.jpg');
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+/* end Header */
+
+/* begin Box, Sheet */
+.art-sheet>.art-box-tl, .art-sheet>.art-box-tr{
+   background-image: url('images/sheet_t.png');
+}
+.art-sheet>.art-box-bl, .art-sheet>.art-box-br {
+   background-image: url('images/sheet_b.png');
+}
+.art-sheet>.art-box-tl, .art-sheet>.art-box-bl, .art-sheet>.art-box-cl{
+   right:30px;
+}
+.art-sheet>.art-box-tr, .art-sheet>.art-box-br, .art-sheet>.art-box-cr{
+   width: 30px;
+}
+.art-sheet>.art-box-cl, .art-sheet>.art-box-cr{
+   top:30px;
+   bottom:30px;
+   background-image:url('images/sheet.png');
+}
+/* end Box, Sheet */
+
+/* begin Layout */
+.art-content-layout, .art-content-layout-row, .art-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.art-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+/* end Layout */
+
+/* begin PostIcons, PostHeaderIcons */
+.art-postheadericons span{
+   zoom: 1;
+}/* end PostIcons, PostHeaderIcons */
+
+/* begin PostContent */
+.art-postcontent {
+   height: 1%;
+}
+/* end PostContent */
+
+/* begin PostMetadata, PostMetadataFooter */
+.art-postmetadatafooter{
+   zoom:1;
+}
+/* end PostMetadata, PostMetadataFooter */
+
+/* begin PostIcons, PostFooterIcons */
+.art-postfootericons span{
+   zoom: 1;
+}/* end PostIcons, PostFooterIcons */
+
+/* begin Footer */
+.art-footer {
+   zoom:expression(runtimeStyle.zoom=1,function(e){for(var i=0;i<e.length;i++)insertBefore(document.createElement('div'),firstChild).className='art-footer-'+e[ i]}('r,l,t'.split(',')));
+}
+.art-footer-body 
+{
+   zoom: 1;
+   padding-right: 0;
+}
+
+.art-footer-t
+{
+   position: absolute;
+   z-index:-1;
+   left:0;
+   right:0;
+   top:0;
+   bottom:50px;
+   background-image: url('images/footer.png');
+   background-position:bottom left;
+}
+
+.art-footer-l, .art-footer-r 
+{
+   position: absolute;
+   content:' ';
+   z-index:-1;
+   bottom:0;
+   height:50px;
+   background-image: url('images/footer_b.png');
+}
+
+.art-footer-l
+{
+   left:0;
+   right:17px;
+   background-position: top left;
+}
+
+.art-footer-r
+{
+   right:0;
+   width:17px;
+   background-position: top right;
+}
+/* end Footer */
+
+/* begin LayoutCell, content */
+.art-content 
+{
+   width: auto;
+   float:none;
+}
+/* end LayoutCell, content */
+
